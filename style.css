@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  font-family: "Oswald", sans-serif;
+}
+header h2 {
+  color: black;
+  font-weight: 700;
+  margin-left: 20px;
+  font-size: 30px;
+}
+header nav {
+  width: 50%;
+}
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 500;
+  font-size: 15px;
+}
+header a {
+  color: #5B5B5B;
+}
+header a.nav-a:hover {
+  border: 2px solid black;
+  color: black;
+  padding: 10%;
+  font-weight: 700;
+}
+
+main .container {
+  height: 85vh;
+  background-image: url(./img/background.png);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+main .container .conteudo {
+  font-family: "Oswald", sans-serif;
+  margin: 10%;
+  color: white;
+}
+main .container h1 {
+  font-size: 96px;
+  font-weight: 700;
+}
+main .container p.inicio {
+  font-size: 32px;
+  font-weight: 300;
+}
+main .container .bnt {
+  background-color: #0016DF;
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  width: 12rem;
+  height: 3rem;
+  margin-top: 5%;
+}
+main .sec-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .sec-cont .description {
+  margin: 7%;
+}
+main .sec-cont .description h3 {
+  color: #0016DF;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+main .sec-cont .description h2 {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 800;
+}
+main .sec-cont .description p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+main .sec-cont .description a {
+  font-size: 18px;
+  color: #0016DF;
+}
+main .sec-cont .img-content {
+  height: 783px;
+}
+main .container-3 {
+  height: 110vh;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
+}
+main .container-3 .cab-article {
+  align-items: center;
+  flex-direction: column;
+}
+main .container-3 .cab-artig h2 {
+  color: #0016DF;
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main .container-3 .cab-artig h3 {
+  font-family: Oswald;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+main .container-3 .cards {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+  justify-content: space-evenly;
+}
+main .container-3 article {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  width: 300px;
+  overflow: hidden;
+  text-align: left;
+}
+main .container-3 article p {
+  font-size: 14px;
+  margin: 0 15px 15px;
+  color: #5B5B5B;
+}
+main .container-3 article h3 {
+  font-size: 18px;
+  margin: 15px;
+}
+main .container-4 {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+main .container-4 h2 {
+  font-family: Oswald;
+  font-size: 32px;
+  font-weight: 500;
+  color: #0016DF;
+}
+main .container-4 h3 {
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 500;
+}
+main .teste {
+  display: flex;
+  flex-direction: column;
+}
+main .margin {
+  margin: 5% auto;
+  text-align: left;
+}
+main .img-blocos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer {
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #001C43;
+  padding: 20px;
+}
+footer footer p {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

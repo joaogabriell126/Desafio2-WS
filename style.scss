@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    font-family: "Oswald", sans-serif;
+
+    h2 {
+        color: black;
+        font-weight: 700;
+        margin-left: 20px;
+        font-size: 30px;
+    }
+
+    nav {
+        width: 50%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    a {
+        color: #5B5B5B;
+    }
+
+    a.nav-a:hover {
+        border: 2px solid black;
+        color: black;
+        padding: 10%;
+        font-weight: 700;
+    }
+}
+
+main {
+    .container {
+        height: 85vh;
+        background-image: url(./img/background.png);
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+
+        .conteudo {
+            font-family: "Oswald", sans-serif;
+            margin: 10%;
+            color: #ffff;
+        }
+
+        h1 {
+            font-size: 96px;
+            font-weight: 700;
+
+        }
+
+        p.inicio {
+            font-size: 32px;
+            font-weight: 300;
+        }
+
+        .bnt {
+            background-color: #0016DF;
+            font-family: Oswald;
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffff;
+            width: 12rem;
+            height: 3rem;
+            margin-top: 5%;p
+        }
+    }
+
+    .sec-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .description {
+            margin: 7%;
+        }
+
+        .description h3 {
+            color: #0016DF;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .description h2 {
+            font-family: Roboto;
+            font-size: 36px;
+            font-weight: 800;
+
+        }
+
+        .description p {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: left;
+
+        }
+
+        .description a {
+            font-size: 18px;
+            color: #0016DF;
+        }
+
+        .img-content {
+            height: 783px;
+        }
+    }
+
+
+    .container-3 {
+        height: 110vh;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 20px;
+
+        .cab-article {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .cab-artig h2 {
+            color: #0016DF;
+            font-family: Oswald;
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 10px;
+
+
+        }
+
+        .cab-artig h3 {
+            font-family: Oswald;
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+            padding: 0 20px;
+            justify-content: space-evenly;
+        }
+
+        article {
+            //tive ajuda do CHAT GPT 4 aqui
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+            width: 300px;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        article p {
+            //Peguei uma cola aqui também para o uso da margin
+            font-size: 14px;
+            margin: 0 15px 15px;
+            color: #5B5B5B;
+        }
+
+        article h3 {
+            font-size: 18px;
+            margin: 15px;
+        }
+    }
+
+    .container-4 {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-4 h2 {
+        font-family: Oswald;
+        font-size: 32px;
+        font-weight: 500;
+        color: #0016DF;
+    }
+
+    .container-4 h3 {
+        font-family: Oswald;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .teste {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .margin {
+        margin: 5% auto;
+        text-align: left;
+    }
+
+    .img-blocos {
+        //Uma boa ajuda do Gmini - nesse seletor
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+footer {
+    text-align: center;
+    background-color: #f5f5f5;
+    color: #001C43;
+    padding: 20px;
+
+    footer p {
+        font-family: Oswald;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
