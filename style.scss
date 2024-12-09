@@ -136,6 +136,7 @@ main {
         flex-direction: column;
         justify-content: center;
         padding: 40px 20px;
+        font-family: Oswald;
 
         .cab-article {
             align-items: center;
@@ -144,21 +145,19 @@ main {
 
         .cab-artig h2 {
             color: #0016DF;
-            font-family: Oswald;
             font-size: 24px;
             font-weight: 500;
             text-align: center;
             margin-bottom: 10px;
-
-
+            text-transform: uppercase;
         }
 
         .cab-artig h3 {
-            font-family: Oswald;
             margin-bottom: 30px;
             font-size: 24px;
             font-weight: 500;
             text-align: center;
+            text-transform: uppercase;
         }
 
         .cards {
@@ -191,22 +190,22 @@ main {
     }
 
     .container-4 {
+        font-family: Oswald;
         height: 100vh;
         display: flex;
         flex-direction: row;
     }
 
     .container-4 h2 {
-        font-family: Oswald;
         font-size: 32px;
         font-weight: 500;
         color: #0016DF;
     }
 
     .container-4 h3 {
-        font-family: Oswald;
         font-size: 24px;
         font-weight: 500;
+        text-transform: uppercase;
     }
 
     .teste {
@@ -225,6 +224,12 @@ main {
         justify-content: space-around;
         flex-wrap: wrap;
         margin-left: 5%;
+        gap: 20px;
+    }
+
+    figcaption{
+        text-transform: uppercase;
+        font-weight: 700;
     }
 
     form {
@@ -237,6 +242,11 @@ main {
         margin-left: 15%;
         margin-right: 20%;
         margin-top: 2rem;
+
+        .indice{
+            font-weight: 500;
+            text-transform: uppercase;
+        }
 
         .menor {
             width: 15rem;
