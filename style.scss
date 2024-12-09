@@ -214,7 +214,7 @@ main {
     }
 
     .margin {
-        margin: 2rem;
+        margin: 2.5rem;
         text-align: left;
     }
 
@@ -223,7 +223,7 @@ main {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin-left: 5%;
+        margin-left: 2rem;
         gap: 20px;
     }
 
@@ -240,7 +240,7 @@ main {
         flex-direction: column;
         align-content: center;
         margin-left: 15%;
-        margin-right: 20%;
+        margin-right: 15%;
         margin-top: 2rem;
 
         .indice{
