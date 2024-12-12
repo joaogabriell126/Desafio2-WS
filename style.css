@@ -211,6 +211,7 @@ main form .menor {
 main form #mensagem {
   width: 15rem;
   height: 7rem;
+  resize: none;
 }
 main form label {
   margin-top: 0.6rem;

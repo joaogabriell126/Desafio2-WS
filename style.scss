@@ -255,9 +255,8 @@ main {
         #mensagem {
             width: 15rem;
             height: 7rem;
+            resize: none;
         }
-
-        //Encontrei um novo problema relacionado à caixa de mensagem. Desta vez, ele ocorre dentro da página aberta, onde é possível ajustar o tamanho da caixa utilizando o cursor do mouse, e não sei como resolver isso.
 
         label {
             margin-top: 0.6rem;
@@ -286,4 +285,4 @@ footer {
     padding: 12px;
 }
     
-    //Fiz uma alteração na forma como implementei este novo footer. Gostaria que vocês comparassem com o commit anterior para ver como ele foi feito anteriormente. Uma breve explicação: nesta versão, utilizei a propriedade height com o valor de 4vh, subtraindo esse valor da altura total da página e atribuindo 96vh ao container-4, resultando em um total de 100vh. Já no footer anterior, eu havia utilizado apenas padding e text-align. Decidi fazer essa mudança por considerar mais adequado o uso de height combinado com display: flex.
+    //Fiz uma alteração na forma como implementei este novo footer. Gostaria que vocês comparassem com o commit anterior (correção-c4) para ver como ele foi feito anteriormente. Uma breve explicação: nesta versão, utilizei a propriedade height com o valor de 4vh, subtraindo esse valor da altura total da página e atribuindo 96vh ao container-4, resultando em um total de 100vh. Já no footer anterior, eu havia utilizado apenas padding e text-align. Decidi fazer essa mudança por considerar mais adequado o uso de height combinado com display: flex.
