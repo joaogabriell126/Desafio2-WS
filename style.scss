@@ -6,7 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
+    font-family: "Oswald", sans-serif;
 }
 
 header {
@@ -14,7 +14,6 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 15vh;
-    font-family: "Oswald", sans-serif;
 
     h2 {
         color: black;
@@ -57,7 +56,6 @@ main {
         align-items: center;
 
         .conteudo {
-            font-family: "Oswald", sans-serif;
             margin: 10%;
             color: #ffff;
         }
@@ -68,14 +66,13 @@ main {
 
         }
 
-        p.inicio {
+        #principal {
             font-size: 32px;
             font-weight: 300;
         }
 
         .bnt {
             background-color: #0016DF;
-            font-family: Oswald;
             font-size: 20px;
             font-weight: 700;
             color: #ffff;
@@ -85,7 +82,7 @@ main {
         }
     }
 
-    .sec-cont {
+    .container-2 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -130,20 +127,19 @@ main {
 
 
     .container-3 {
-        height: 110vh;
+        height: 110vh; //Não sei por qual motivo, mas não estava conseguindo colocar em apenas 100vh. Ficava menor do que o tamanho total da minha tela. Por isso, optei por colocar em 110vh.
         background-color: #D8D8D8;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 40px 20px;
-        font-family: Oswald;
+        padding: 2.5rem 1.25rem;
 
-        .cab-article {
+        .article-header {
             align-items: center;
             flex-direction: column;
         }
 
-        .cab-artig h2 {
+        .article-header h2 {
             color: #0016DF;
             font-size: 24px;
             font-weight: 500;
@@ -152,7 +148,7 @@ main {
             text-transform: uppercase;
         }
 
-        .cab-artig h3 {
+        .article-header h3 {
             margin-bottom: 30px;
             font-size: 24px;
             font-weight: 500;
@@ -171,7 +167,7 @@ main {
             //tive ajuda do CHAT GPT 4 aqui
             background: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-            width: 300px;
+            width: 19rem;
             overflow: hidden;
             text-align: left;
         }
@@ -179,19 +175,18 @@ main {
         article p {
             //Peguei uma cola aqui também para o uso da margin
             font-size: 14px;
-            margin: 0 15px 15px;
+            margin: 0 1rem 1rem;
             color: #5B5B5B;
         }
 
         article h3 {
             font-size: 18px;
-            margin: 15px;
+            margin: 1rem;
         }
     }
 
     .container-4 {
-        font-family: Oswald;
-        height: 100vh;
+        height: 96vh;
         display: flex;
         flex-direction: row;
     }
@@ -213,7 +208,7 @@ main {
         flex-direction: column;
     }
 
-    .margin {
+    .c4-margin {
         margin: 2.5rem;
         text-align: left;
     }
@@ -225,6 +220,11 @@ main {
         flex-wrap: wrap;
         margin-left: 2rem;
         gap: 20px;
+
+        img{
+            width: 90%; 
+            height: auto;
+        }
     }
 
     figcaption{
@@ -233,7 +233,6 @@ main {
     }
 
     form {
-        font-family: Oswald;
         font-size: 20px;
         font-weight: 300;
         display: flex;
@@ -253,41 +252,38 @@ main {
             height: 2rem;
         }
 
-        .msg {
+        #mensagem {
             width: 15rem;
             height: 7rem;
         }
 
+        //Encontrei um novo problema relacionado à caixa de mensagem. Desta vez, ele ocorre dentro da página aberta, onde é possível ajustar o tamanho da caixa utilizando o cursor do mouse, e não sei como resolver isso.
+
         label {
-            margin-top: 1rem;
+            margin-top: 0.6rem;
         }
 
         .button {
-            margin-top: 2rem;
-            height: 3rem;
-            font-family: Oswald;
-            font-size: 20px;
+            margin-top: 1rem;
+            height: 2.5rem;
+            font-size: 18px;
             font-weight: 500;
             background-color: #0016DF;
             color: #ffff;
         }
     }
-
-
-
-
 }
 
 footer {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #D8D8D8;
-    ;
     color: #001C43;
-    padding: 20px;
-
-    footer p {
-        font-family: Oswald;
-        font-size: 14px;
-        font-weight: bold;
-    }
+    font-size: 12px;
+    font-weight: bold;
+    height: 5vh;
+    padding: 12px;
 }
+    
+    //Fiz uma alteração na forma como implementei este novo footer. Gostaria que vocês comparassem com o commit anterior para ver como ele foi feito anteriormente. Uma breve explicação: nesta versão, utilizei a propriedade height com o valor de 4vh, subtraindo esse valor da altura total da página e atribuindo 96vh ao container-4, resultando em um total de 100vh. Já no footer anterior, eu havia utilizado apenas padding e text-align. Decidi fazer essa mudança por considerar mais adequado o uso de height combinado com display: flex.
